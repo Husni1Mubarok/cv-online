@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Husni Mubarok | Personal CV</title>
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader">
+    <div class="loader-content">
+      <h2>HM CV</h2>
+      <div class="loading-bar">
+        <span class="loading-fill"></span>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
+  <!-- BACKGROUND EFFECT -->
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <!-- LOGO -->
+      <a href="#home" class="logo">HM<span>.</span></a>
+      <!-- NAVIGATION -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#background" class="nav-link">Background</a></li>
+        <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- RIGHT NAV -->
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <!-- HERO CONTENT -->
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <i class="fa-solid fa-circle"></i>
+          Available for Internship
+        </div>
+        <h1>Hi, I'm <span>Husni Mubarok</span></h1>
+        <h2 id="typing"></h2>
+        <p class="hero-description">
+          Mahasiswa Sistem Informasi yang fokus pada
+          Web Development, UI Design, dan pengembangan
+          digital experience modern.
+        </p>
+        <!-- BUTTON -->
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary-btn ripple">
+            <i class="fa-solid fa-paper-plane"></i>
+            Hubungi Saya
+          </a>
+        </div>
+        <!-- STATS -->
+        <div class="hero-stats">
+          <article class="stat-card glass">
+            <h3 class="counter" data-target="6">0</h3>
+            <p>Projects</p>
+          </article>
+          <article class="stat-card glass">
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Certificates</p>
+          </article>
+          <article class="stat-card glass">
+            <h3 class="counter" data-target="3">0</h3>
+            <p>Experience</p>
+          </article>
+        </div>
+      </div>
+      <!-- HERO IMAGE -->
+      <div class="hero-image reveal">
+        <div class="image-wrapper">
+          <div class="glow-ring"></div>
+          <img src="Asset/Fotoku.JPG" alt="Profile Husni" loading="lazy">
+          <!-- FLOATING CARD -->
+          <div class="floating-card card-1">
+            <i class="fa-solid fa-code"></i>
+            Web Developer
+          </div>
+          <div class="floating-card card-2">
+            <i class="fa-solid fa-palette"></i>
+            UI/UX Designer
+          </div>
+        </div>
+      </div>
+      <!-- SCROLL INDICATOR -->
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <div class="section-title reveal">
+        <span>About Me</span>
+        <h2>Passionate About Building Digital Experiences</h2>
+      </div>
+      <div class="about-container">
+        <!-- LEFT -->
+        <div class="about-left reveal">
+          <article class="about-card glass">
+            <h3>Siapa Saya?</h3>
+            <p>
+              Saya adalah mahasiswa Sistem Informasi
+              yang memiliki minat besar dalam bidang
+              teknologi, UI/UX, dan web development.
+            </p>
+            <p>
+              Saya sedang belajar membuat website modern
+              yang clean, interaktif, responsif, nyaman dilihat dan digunakan
+            </p>
+          </article>
+        </div>
+        <!-- RIGHT -->
+        <div class="about-right reveal">
+          <div class="info-grid">
+            <article class="info-card glass">
+              <i class="fa-solid fa-lightbulb"></i>
+              <h4>Creative Thinking</h4>
+              <p>Menyukai eksplorasi ide dan desain modern.</p>
+            </article>
+            <article class="info-card glass">
+              <i class="fa-solid fa-users"></i>
+              <h4>Team Collaboration</h4>
+              <p>Mampu bekerja sama dan beradaptasi.</p>
+            </article>
+            <article class="info-card glass">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h4>Web Development</h4>
+              <p>Sedang mempelajari web development.</p>
+            </article>
+            <article class="info-card glass">
+              <i class="fa-solid fa-chart-line"></i>
+              <h4>Continuous Learning</h4>
+              <p>Selalu ingin belajar teknologi dan skill baru.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+      <div class="section-title reveal">
+        <span>Capabilities</span>
+        <h2>Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <div class="skill-name">HTML</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="90"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">90%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="skill-name">CSS</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="85"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="75"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">75%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-name">Python</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="70"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">70%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="skill-name">Java</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="75"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">75%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="skill-name">UI / UX Design</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="80"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-name">SQL</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="65"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">65%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-name">C++</div>
+          <div class="skill-circle-wrap">
+            <svg class="skill-svg" viewBox="0 0 100 100">
+              <circle class="skill-track" cx="50" cy="50" r="38"/>
+              <circle class="skill-fill" cx="50" cy="50" r="38"
+                data-percent="60"
+                style="stroke-dasharray:0 239"/>
+            </svg>
+            <span class="skill-percent">60%</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- BACKGROUND SECTION -->
+    <section class="background section" id="background">
+
+      <div class="section-title reveal">
+        <span>Background</span>
+        <h2>The path that shaped who I am today.</h2>
+      </div>
+
+      <!-- ================= JOURNEY ================= -->
+      <div class="sub-section reveal">
+
+        <div class="section-title">
+          <h3>
+            <i class="fa-solid fa-graduation-cap"></i>
+            EDUCATION BACKGROUND
+          </h3>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span>2018 - 2021</span>
+              <h3>SMP Semen Gresik</h3>
+              <p>
+                Di SMP Semen Gresik saya mulai memiliki ketertarikan besar pada matematika,
+                sains, dan sejarah dunia.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span>2021 - 2024</span>
+              <h3>SMA Semen Gresik</h3>
+              <p>
+                Saat SMA saya mulai tertarik pada dunia teknologi dan aktif mengikuti berbagai
+                lomba olimpiade matematika serta sains.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span>2024 - Sekarang</span>
+              <h3>Universitas Internasional Semen Indonesia</h3>
+              <p>
+                Mahasiswa Sistem Informasi dengan fokus pada pengembangan website modern dan
+                digital experience interaktif.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <div class="sub-section reveal">
+
+        <div class="section-title">
+          <h3>
+            <i class="fa-solid fa-briefcase"></i>
+            EXPERIENCE
+          </h3>
+        </div>
+
+        <div class="experience-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-number">01</div>
+          <div class="exp-card glass">
+            <div class="exp-status active"></div>
+            <span class="exp-badge">Staff Ahli</span>
+            <div class="exp-header">
+              <h3>HIMA SISFOR - Divisi RISTEK</h3>
+              <span class="exp-year">2025 — Sekarang</span>
+            </div>
+            <p>Staff Ahli Himpunan Mahasiswa Sistem Informasi Divisi RISTEK
+              yang bertanggung jawab sebagai PJ Study Club Web Development.
+              Berperan dalam mengelola dan menjalankan kegiatan Study Club
+              Web Development serta mengoordinasikan peserta. Selain itu,
+              juga mengelola Form Prestasi dan Magang mahasiswa.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-number">02</div>
+          <div class="exp-card glass">
+            <div class="exp-status"></div>
+            <span class="exp-badge">Magang</span>
+            <div class="exp-header">
+              <h3>GIBEI UISI - Divisi Learning Center</h3>
+              <span class="exp-year">2024 — 2025</span>
+            </div>
+            <p>Staff Magang Galeri Investasi Bursa Efek Indonesia Divisi
+              Learning Center yang bertugas menyusun laporan analisis,
+              investment insight.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-number">03</div>
+          <div class="exp-card glass">
+            <div class="exp-status"></div>
+            <span class="exp-badge">Wakil Ketua</span>
+            <div class="exp-header">
+              <h3>Esport SMAMEN - Wakil Ketua</h3>
+              <span class="exp-year">2024 — 2025</span>
+            </div>
+            <p>Wakil Ketua tim Esports SMA SEMEN Gresik, bertanggung jawab
+              dalam mengatur jadwal latihan (ekskul), scrim, dan turnamen,
+              serta mengoordinasikan kegiatan kompetitif tim. Selain itu,
+              juga mengelola dan mengembangkan akun Instagram rEsport
+              SMA SEMEN Gresik.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= ACHIEVEMENTS ================= -->
+      <div class="sub-section reveal">
+
+        <div class="section-title">
+          <h3>
+            <i class="fa-solid fa-trophy"></i>
+            ACHIEVEMENTS
+          </h3>
+        </div>
+
+        <div class="achievement-container">
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>ON-MIPA PT</h3>
+                <span class="achievement-year">2025</span>
+              </div>
+              <p>Delegasi ON-MIPA PT Matematika Universitas Internasional Semen Indonesia.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>OSN</h3>
+                <span class="achievement-year">2023</span>
+              </div>
+              <p>Delegasi OSN Matematika SMA Semen Gresik.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>OLN</h3>
+                <span class="achievement-year">2023</span>
+              </div>
+              <p>Delegasi Olimpiade Literasi dan Numerisasi Nasional SMA Semen Gresik.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>OSN Finalis</h3>
+                <span class="achievement-year">2022</span>
+              </div>
+              <p>Finalis Olimpiade Matematika Nasional Indonesia Hebat.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>OLN</h3>
+                <span class="achievement-year">2022</span>
+              </div>
+              <p>Delegasi Olimpiade Literasi dan Numerisasi Nasional SMA Semen Gresik.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>Siswa Berprestasi</h3>
+                <span class="achievement-year">2022</span>
+              </div>
+              <p>Penghargaan Siswa Berprestasi SMA Semen Gresik.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>Piagam Penghargaan</h3>
+                <span class="achievement-year">2021</span>
+              </div>
+              <p>Pelatihan Otomasi Perkantoran periode Juli - Desember.</p>
+            </div>
+          </article>
+
+          <article class="achievement-card glass reveal">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top">
+                <h3>Sertifikat</h3>
+                <span class="achievement-year">2021</span>
+              </div>
+              <p>Program Pengembangan Diri Keahlian Listrik Rumah Tangga.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+
+
+ <!-- PROJECTS -->
+    <section class="portofolio section" id="portofolio">
+      <div class="section-title reveal">
+        <span>Portofolio</span>
+        <h2>Portofolio I have ever made</h2>
+      </div>
+      <div class="project-grid">
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/Unilife.jpg" alt="Project 1" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Low-Code Application / QA & Product</span>
+            <h3>UniLife</h3>
+            <p>Aplikasi pengingat dan manajemen keuangan mahasiswa berbasis Microsoft Power Apps.</p>
+            <div class="tech-stack">
+              <span>Microsoft Power Apps</span>
+              <span>Power Automate</span>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/VAD_UAS.jpg" alt="Project 2" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Data Visualization / UI Design</span>
+            <h3>Adidas Sales Dashboard</h3>
+            <p>Dashboard analisis penjualan Adidas berbasis Streamlit yang menampilkan visualisasi data interaktif untuk membantu memahami tren penjualan, performa produk, dan insight bisnis.</p>
+            <div class="tech-stack">
+              <span>Streamlit</span>
+              <span>Python</span>
+              <span>Data Visualization</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/VAD_UTS.jpg" alt="Project 3" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">UI/UX Designer</span>
+            <h3>Olimpiade Medals Dashboard</h3>
+            <p>Dashboard visualisasi data perolehan medali Olimpiade dari tahun 1900 hingga saat ini, yang menampilkan analisis distribusi medali antar negara melalui tampilan interaktif.</p>
+            <div class="tech-stack">
+              <span>Power BI</span>
+              <span>Data Visualization</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/CV_online.jpg" alt="Project 4" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Web Development</span>
+            <h3>Personal CV Online</h3>
+            <p>Halaman CV interaktif berbasis HTML, CSS, dan JavaScript dengan desain modern, animasi smooth, dan fitur dark/light mode.</p>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/CapyQuest.jpg" alt="Capy Quest" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Game Development</span>
+            <h3>Capy Quest</h3>
+            <p>Game 2D berbasis Greenfoot menggunakan bahasa Java. Pemain mengendalikan capybara melewati berbagai rintangan dan level yang menantang dengan menjawab soal.</p>
+            <div class="tech-stack">
+              <span>Java</span>
+              <span>Greenfoot</span>
+              <span>Game Development</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-image">
+            <img src="Asset/Tiktok.jpg" alt="TikTok Pengetahuan Umum" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="project-category">Content Creator</span>
+            <h3>TikTok Pengetahuan Umum</h3>
+            <p>Konten video pendek di TikTok yang membahas sejarah dan pengetahuan umum secara ringan, informatif, dan mudah dipahami untuk audiens luas.</p>
+            <div class="tech-stack">
+              <span>Research</span>
+              <span>Content Creation</span>
+              <span>Video Editing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.tiktok.com/@verrsecade" target="_blank">View Project →</a>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="section-title reveal">
+        <span>Contact</span>
+        <h2>Let's Build Something Together</h2>
+      </div>
+      <div class="contact-container">
+        <!-- LEFT -->
+        <div class="contact-info reveal">
+          <article class="contact-card glass">
+            <h3>Contact Information</h3>
+            <p>Terbuka untuk kolaborasi, project, dan internship.</p>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="https://mail.google.com/mail/?view=cm&to=husni.mubarok24@student.uisi.ac.id" 
+                target="_blank"
+                style="color:var(--text-soft);">
+                husni.mubarok24@student.uisi.ac.id
+              </a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <a href="https://maps.google.com/?q=Romokalisari,Benowo,Surabaya" 
+                target="_blank"
+                style="color:var(--text-soft);">
+                Romokalisari, Benowo, Surabaya
+              </a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/6287761709094" 
+                target="_blank"
+                style="color:var(--text-soft);">
+                087761709094
+              </a>
+            </div>
+            <!-- SOCIAL -->
+            <div class="social-links">
+              <a href="https://github.com/Husni1Mubarok" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/husni1mubarok" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/husn1i?igsh=MXZuaHJ5c3NkeXFiMw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            </div>
+          </article>
+        </div>
+        <!-- RIGHT -->
+        <div class="contact-form reveal">
+          <form id="contactForm" class="glass">
+            <div class="input-group">
+              <input type="text" id="name" required>
+              <label>Nama</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" required></textarea>
+              <label>Pesan</label>
+            </div>
+            <button type="submit" class="btn primary-btn ripple">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-content reveal">
+    <h3>Husni Mubarok</h3>
+    <p>Building elegant digital experiences with modern web technologies.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#background">Background</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/Husni1Mubarok" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/husni1mubarok" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/husn1i?igsh=MXZuaHJ5c3NkeXFiMw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Husni Mubarok</span>
+    <p class="copyright"></p>
+    <span>Built with passion & purpose.</span>
+  </div>
+  <a href="#home" class="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+</footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
