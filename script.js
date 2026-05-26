@@ -316,8 +316,8 @@ document.querySelectorAll(".skill-svg").forEach(svg => {
   const d = document.createElementNS(svgNS, "defs");
   d.innerHTML = `
     <linearGradient id="${gradId}" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
+      <stop offset="0%"   stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#f0d080"/>
     </linearGradient>`;
 
   svg.prepend(d);
@@ -647,8 +647,8 @@ achievementCards.forEach(card => {
 
     card.style.boxShadow =
       `
-      0 0 25px rgba(139,92,246,0.35),
-      0 0 50px rgba(139,92,246,0.15)
+      0 0 25px rgba(201,168,76,0.35),
+      0 0 50px rgba(240,208,128,0.15)
       `;
   });
 
@@ -720,8 +720,8 @@ window.addEventListener(
 ========================= */
 
 const trailColors = [
-  "#6366f1", "#8b5cf6", "#06b6d4",
-  "#a78bfa", "#38bdf8", "#c084fc"
+  "#c9a84c", "#e2c97e", "#f0d080",
+  "#d4a852", "#edd47a", "#b8922e"
 ];
 
 window.addEventListener("mousemove", (e) => {

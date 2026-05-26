@@ -1,24 +1,23 @@
-  /* =========================
+/* =========================
     ROOT VARIABLES
   ========================= */
+:root{
 
-  :root{
+  --bg:#0a0a0a;
+  --bg-secondary:#111111;
+  --surface:rgba(255,255,255,.04);
 
-    --bg:#050816;
-    --bg-secondary:#0b1120;
-    --surface:rgba(255,255,255,.05);
+  --text:#f5f0e8;
+  --text-soft:#9a8f7e;
 
-    --text:#f8fafc;
-    --text-soft:#94a3b8;
+  --primary:#c9a84c;
+  --primary-light:#e2c97e;
+  --accent:#f0d080;
 
-    --primary:#6366f1;
-    --primary-light:#8b5cf6;
-    --accent:#06b6d4;
+  --border:rgba(201,168,76,.15);
 
-    --border:rgba(255,255,255,.08);
-
-    --shadow:
-    0 10px 30px rgba(0,0,0,.25);
+  --shadow:
+  0 10px 30px rgba(0,0,0,.4);
 
     --radius-lg:32px;
     --radius-md:24px;
@@ -168,7 +167,7 @@
     position: fixed;
     inset: 0;
 
-    background: #0b1020;
+    background: #0a0a0a;
 
     display: flex;
     align-items: center;
@@ -221,8 +220,8 @@
 
     background: linear-gradient(
       90deg,
-      #7c4dff,
-      #3b82f6
+      #c9a84c,
+      #e2c97e
     );
 
     animation: loadingFill 2s ease forwards;
@@ -266,24 +265,24 @@
     width:420px;
     height:420px;
 
-    background:#4f46e5;
+    background:#c9a84c;
 
     top:-120px;
     left:-120px;
 
-    opacity:.25;
+    opacity:.15;
   }
 
   .blur-2{
     width:420px;
     height:420px;
 
-    background:#06b6d4;
+    background:#e2c97e;
 
     bottom:-120px;
     right:-120px;
 
-    opacity:.18;
+    opacity:.10;
   }
 
   .bg-grid{
@@ -338,12 +337,12 @@
   }
 
   .header.scrolled{
-    background:rgba(5,8,22,.75);
+    background:rgba(10,10,10,.85);
 
     backdrop-filter:blur(20px);
 
     border-bottom:
-    1px solid rgba(255,255,255,.05);
+    1px solid rgba(201,168,76,.15);
   }
 
   body.light .header.scrolled{
@@ -494,13 +493,11 @@
 
     border-radius:50px;
 
-    background:
-    rgba(99,102,241,.15);
+    background:rgba(201,168,76,.15);
 
-    color:#c7d2fe;
+    color:#e2c97e;
 
-    border:
-    1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(201,168,76,.25);
 
     margin-bottom:28px;
   }
@@ -586,10 +583,10 @@
     var(--primary-light)
     );
 
-    color:white;
+    color:#0a0a0a;
 
     box-shadow:
-    0 10px 30px rgba(99,102,241,.35);
+    0 10px 30px rgba(201,168,76,.35);
   }
 
   .secondary-btn{
@@ -661,8 +658,7 @@
     position:relative;
     z-index:2;
 
-    border:
-    1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(201,168,76,.2);
   }
 
   .glow-ring{
@@ -695,12 +691,11 @@
 
     border-radius:18px;
 
-    background:rgba(15,23,42,.85);
+    background:rgba(10,10,10,.9);
 
-    border:
-    1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(201,168,76,.2);
 
-    color:white;
+    color:#f5f0e8;
 
     z-index:3;
 
@@ -749,8 +744,7 @@
 
     border-radius:50px;
 
-    border:
-    2px solid rgba(255,255,255,.3);
+    border:2px solid rgba(201,168,76,.4);
 
     position:relative;
   }
@@ -770,7 +764,7 @@
 
     border-radius:50%;
 
-    background:white;
+    background:#c9a84c;
 
     animation:scrollAnim 1.5s infinite;
   }
@@ -878,10 +872,10 @@
 
 .skill-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(99,102,241,.35);
+  border-color: rgba(201,168,76,.35);
   box-shadow:
-    0 20px 50px rgba(99,102,241,.15),
-    0 0 30px rgba(6,182,212,.08);
+    0 20px 50px rgba(201,168,76,.15),
+    0 0 30px rgba(240,208,128,.08);
 }
 
 .skill-icon {
@@ -995,8 +989,7 @@ body.light .skill-track {
     width:2px;
     height:100%;
 
-    background:
-    rgba(255,255,255,.1);
+    background:rgba(201,168,76,.15);
   }
 
   .timeline-item{
@@ -1028,8 +1021,7 @@ body.light .skill-track {
 
     background:var(--accent);
 
-    box-shadow:
-    0 0 20px var(--accent);
+    box-shadow:0 0 20px var(--accent);
   }
 
   .timeline-item:nth-child(even) .timeline-dot{
@@ -1100,7 +1092,7 @@ body.light .exp-number {
 }
 
 .exp-item:hover .exp-number {
-  color: rgba(99,102,241,.12);
+  color: rgba(201,168,76,.12);
 }
 
 .exp-card {
@@ -1121,7 +1113,7 @@ body.light .exp-number {
 .exp-card:hover {
   transform: translateX(8px);
   box-shadow:
-    -4px 0 30px rgba(99,102,241,.2),
+    -4px 0 30px rgba(201,168,76,.2),
     0 20px 50px rgba(0,0,0,.2);
 }
 
@@ -1156,9 +1148,9 @@ body.light .exp-number {
   font-weight: 600;
   letter-spacing: .5px;
   text-transform: uppercase;
-  background: rgba(99,102,241,.12);
-  color: #a5b4fc;
-  border: 1px solid rgba(99,102,241,.2);
+  background: rgba(201,168,76,.12);
+  color: #e2c97e;
+  border: 1px solid rgba(201,168,76,.2);
   margin-bottom: 14px;
 }
 
@@ -1197,9 +1189,9 @@ body.light .exp-card {
 }
 
 body.light .exp-badge {
-  background: rgba(99,102,241,.08);
+  background: rgba(201,168,76,.08);
   color: var(--primary);
-  border-color: rgba(99,102,241,.2);
+  border-color: rgba(201,168,76,.2);
 }
 
   /* =========================
@@ -1273,8 +1265,8 @@ body.light .exp-badge {
     border-radius: 28px;
     padding: 2rem;
     transition: 0.4s ease;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.15);
+    background: rgba(255,255,255,0.03);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     min-height: 240px;
@@ -1283,10 +1275,10 @@ body.light .exp-badge {
   /* HOVER EFFECT */
   .achievement-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(139,92,246,0.5);
+    border-color: rgba(201,168,76,0.5);
     box-shadow:
-      0 10px 40px rgba(139,92,246,0.15),
-      0 0 30px rgba(59,130,246,0.15);
+      0 10px 40px rgba(201,168,76,0.15),
+      0 0 30px rgba(240,208,128,0.10);
   }
 
   /* TOP GLOW */
@@ -1298,7 +1290,7 @@ body.light .exp-badge {
     width: 180px;
     height: 180px;
     background: radial-gradient(circle,
-        rgba(139,92,246,0.35),
+        rgba(201,168,76,0.25),
         transparent 70%);
     z-index: 0;
   }
@@ -1315,12 +1307,12 @@ body.light .exp-badge {
 
     background: linear-gradient(
       135deg,
-      #7c3aed,
-      #2563eb
+      #c9a84c,
+      #e2c97e
     );
 
     box-shadow:
-      0 10px 25px rgba(124,58,237,0.35);
+      0 10px 25px rgba(201,168,76,0.35);
 
     position: relative;
     z-index: 2;
@@ -1328,7 +1320,7 @@ body.light .exp-badge {
 
   .achievement-icon i {
     font-size: 1.8rem;
-    color: #fff;
+    color: #0a0a0a;
   }
 
   /* CONTENT */
@@ -1350,7 +1342,7 @@ body.light .exp-badge {
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.4;
-    color: #fff;
+    color: #f5f0e8;
     font-family: 'Space Grotesk', sans-serif;
   }
 
@@ -1358,10 +1350,10 @@ body.light .exp-badge {
   .achievement-year {
     padding: 0.4rem 0.9rem;
     border-radius: 999px;
-    background: rgba(139,92,246,0.15);
-    border: 1px solid rgba(139,92,246,0.3);
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
 
-    color: #a78bfa;
+    color: #e2c97e;
     font-size: 0.85rem;
     font-weight: 600;
     white-space: nowrap;
@@ -1369,7 +1361,7 @@ body.light .exp-badge {
 
   /* TEXT */
   .achievement-content p {
-    color: rgba(255,255,255,0.75);
+    color: rgba(245,240,232,0.75);
     line-height: 1.8;
     font-size: 0.96rem;
     margin-top: 0.8rem;
@@ -1396,33 +1388,27 @@ body.light .exp-badge {
   }
 
   .achievement-tags span:hover {
-    background: rgba(139,92,246,0.15);
-    border-color: rgba(139,92,246,0.4);
-    color: #c4b5fd;
+    background: rgba(201,168,76,0.15);
+    border-color: rgba(201,168,76,0.4);
+    color: #e2c97e;
   }
-
-  /* animasi ditangani oleh .reveal — tidak perlu fadeUp terpisah */
 
   /* =========================
     LIGHT MODE OVERRIDES
-    (semua hardcoded white/rgba putih)
   ========================= */
 
-  /* Hero badge */
   body.light .hero-badge{
     color:var(--primary);
-    border-color:rgba(99,102,241,.2);
-    background:rgba(99,102,241,.08);
+    border-color:rgba(201,168,76,.2);
+    background:rgba(201,168,76,.08);
   }
 
-  /* Floating cards hero */
   body.light .floating-card{
     background:rgba(255,255,255,.92);
     color:var(--text);
     border-color:rgba(15,23,42,.1);
   }
 
-  /* Scroll indicator */
   body.light .scroll-indicator span{
     border-color:rgba(15,23,42,.25);
   }
@@ -1430,32 +1416,27 @@ body.light .exp-badge {
     background:var(--text);
   }
 
-  /* Progress bar track */
   body.light .progress-bar{
     background:rgba(15,23,42,.08);
   }
 
-  /* Tag cloud */
   body.light .tag-cloud span{
     color:var(--text);
   }
 
-  /* Timeline line */
   body.light .timeline::before{
     background:rgba(15,23,42,.1);
   }
 
-  /* Timeline & exp content text */
   body.light .timeline-content h3,
   body.light .exp-card h3,
   body.light .exp-header h3{
     color:var(--text);
   }
 
-  /* Tech stack tag */
   body.light .tech-stack span{
     color:var(--primary);
-    background:rgba(99,102,241,.08);
+    background:rgba(201,168,76,.08);
   }
 
   /* =========================
@@ -1468,10 +1449,10 @@ body.light .exp-badge {
   }
 
   body.light .achievement-card:hover{
-    border-color:rgba(99,102,241,.4);
+    border-color:rgba(201,168,76,.4);
     box-shadow:
-      0 10px 40px rgba(99,102,241,.12),
-      0 0 30px rgba(6,182,212,.08);
+      0 10px 40px rgba(201,168,76,.12),
+      0 0 30px rgba(240,208,128,.08);
   }
 
   body.light .achievement-top h3{
@@ -1482,21 +1463,15 @@ body.light .exp-badge {
     color:var(--text-soft);
   }
 
-  body.light .achievement-tags span{
-    background:rgba(15,23,42,.05);
-    border-color:rgba(15,23,42,.1);
-    color:var(--text-soft);
-  }
-
   body.light .achievement-tags span:hover{
-    background:rgba(99,102,241,.1);
-    border-color:rgba(99,102,241,.3);
+    background:rgba(201,168,76,.1);
+    border-color:rgba(201,168,76,.3);
     color:var(--primary);
   }
 
   body.light .achievement-card::before{
     background:radial-gradient(circle,
-      rgba(99,102,241,.15),
+      rgba(201,168,76,.15),
       transparent 70%);
   }
 
@@ -1510,7 +1485,7 @@ body.light .exp-badge {
     height: 400px;
     border-radius: 50%;
     background: radial-gradient(circle,
-      rgba(99,102,241,.08),
+      rgba(201,168,76,.06),
       transparent 70%
     );
     pointer-events: none;
@@ -1571,9 +1546,7 @@ body.light .exp-badge {
 
   .project-card{
     overflow:hidden;
-
     border-radius:var(--radius-lg);
-
     transition:var(--transition);
   }
 
@@ -1587,9 +1560,7 @@ body.light .exp-badge {
 
   .project-image img{
     height:250px;
-
     object-fit:cover;
-
     transition:1s ease;
   }
 
@@ -1619,19 +1590,14 @@ body.light .exp-badge {
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-
     margin:24px 0;
   }
 
   .tech-stack span{
     padding:8px 14px;
-
     border-radius:50px;
-
-    background:
-    rgba(99,102,241,.12);
-
-    color:#c7d2fe;
+    background:rgba(201,168,76,.12);
+    color:#e2c97e;
   }
 
   .project-links{
@@ -1642,7 +1608,6 @@ body.light .exp-badge {
   .project-links a{
     color:var(--text);
     font-weight:600;
-
     transition:var(--transition);
   }
 
@@ -1662,7 +1627,6 @@ body.light .exp-badge {
 
   .contact-card{
     padding:40px;
-
     border-radius:var(--radius-lg);
   }
 
@@ -1680,7 +1644,6 @@ body.light .exp-badge {
     display:flex;
     align-items:center;
     gap:14px;
-
     margin-top:24px;
   }
 
@@ -1691,41 +1654,30 @@ body.light .exp-badge {
   .social-links{
     display:flex;
     gap:16px;
-
     margin-top:40px;
   }
 
   .social-links a{
     width:52px;
     height:52px;
-
     border-radius:50%;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     background:var(--surface);
-
-    border:
-    1px solid var(--border);
-
+    border:1px solid var(--border);
     color:var(--text);
-
     transition:var(--transition);
   }
 
   .social-links a:hover{
     transform:translateY(-5px);
-
     background:var(--primary);
-
-    color:white;
+    color:#0a0a0a;
   }
 
   .contact-form form{
     padding:40px;
-
     border-radius:var(--radius-lg);
   }
 
@@ -1737,20 +1689,12 @@ body.light .exp-badge {
   .input-group input,
   .input-group textarea{
     width:100%;
-
     padding:18px;
-
     background:transparent;
-
-    border:
-    1px solid var(--border);
-
+    border:1px solid var(--border);
     border-radius:18px;
-
     color:var(--text);
-
     outline:none;
-
     transition:var(--transition);
   }
 
@@ -1761,14 +1705,10 @@ body.light .exp-badge {
 
   .input-group label{
     position:absolute;
-
     left:18px;
     top:18px;
-
     color:var(--text-soft);
-
     pointer-events:none;
-
     transition:var(--transition);
   }
 
@@ -1781,16 +1721,11 @@ body.light .exp-badge {
   .input-group textarea:focus + label,
   .input-group input:valid + label,
   .input-group textarea:valid + label{
-
     top:-12px;
     left:14px;
-
     background:var(--bg);
-
     padding:0 8px;
-
     font-size:.85rem;
-
     color:var(--accent);
   }
 
@@ -1875,8 +1810,8 @@ body.light .exp-badge {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
-  box-shadow: 0 10px 30px rgba(99,102,241,.35);
+  color: #0a0a0a;
+  box-shadow: 0 10px 30px rgba(201,168,76,.35);
   transition: var(--transition);
   opacity: 0;
   pointer-events: none;
@@ -1957,7 +1892,7 @@ body.light .exp-badge {
       width:280px;
       height:calc(100vh - 90px);
 
-      background:rgba(5,8,22,.97);
+      background:rgba(10,10,10,.97);
 
       flex-direction:column;
 
